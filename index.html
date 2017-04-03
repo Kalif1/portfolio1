@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+<body>
+	<section class="menu-and-footer sidebarmenu">
+		<nav class="navigation">
+			<img src="img/logo-border.png" alt="" class="logo-border">
+			<img src="logo.png" alt="logo" class="logo">
+			<img src="img/logo-border.png" alt="" class="logo-border">
+			<div class="menu-dots">
+				<div class="menu-dot"></div>
+				<div class="menu-dot"></div>
+				<div class="menu-dot"></div>
+				<div class="menu-dot"></div>
+				<div class="menu-dot"></div>
+			</div>
+			<ul class="main-menu">
+				<li>
+					<div class="main-menu-wrapper">
+						<a href="#">strona główna</a>
+					</div>	
+				</li>
+				<li>
+					<div class="main-menu-wrapper">
+						<a href="#">o nas</a>
+					</div>
+				</li>
+				<li>
+					<div class="main-menu-wrapper">
+						<a href="#">portfolio</a>
+					</div>
+				</li>
+				<li>
+					<div class="main-menu-wrapper">
+						<a href="#">kontakt</a>
+					</div>
+				</li>
+			</ul>
+		</nav>	
+		<footer class="footer">
+			<p>Paweł Kowalsky // tel. 564 894 9874</p>
+			<p>Damian Dobrowolski // tel. 564 894 9874</p>
+			<p>Email // blabla@gmail.com</p>
+			<img src="img/footer-border.png" alt="" class="logo-border-footer">
+			<p class="copyright">@Copyright DP // 2017</p>
+			<img src="img/footer-border.png" alt="" class="logo-border-footer">
+		</footer>	
+		<button id="showmenu" type="button">damian</button>	
+	</section>
+	
+	<div class="cala-strona">
+		<h1>DAMIAN DAMIAN DAMIAN DMAIN ADMIASNDIASDNIF</h1>		
+	</div>
+	<script>
+		$(document).ready(function() {
+	    $('#showmenu').click(function() {
+	    var hidden = $('.sidebarmenu').data('hidden');
+	    $('#showmenu').text(hidden ? 'Hide Menu' : 'Show Menu');
+	    if(hidden){
+	        $('.sidebarmenu').animate({
+	            left: '0px'
+	        },500)
+	    } else {
+	        $('.sidebarmenu').animate({
+	            left: '-400px'
+	        },500)
+	    }
+	    $('.sidebarmenu,.image').data("hidden", !hidden);
+
+	    });
+		}); 	
+	</script>
+</body>
+</html>
