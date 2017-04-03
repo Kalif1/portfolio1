@@ -61,21 +61,26 @@
 	</div>
 	<script>
 		$(document).ready(function() {
-	    $('#showmenu').click(function() {
-	    var hidden = $('.sidebarmenu').data('hidden');
-	    $('#showmenu').text(hidden ? 'Hide Menu' : 'Show Menu');
-	    if(hidden){
-	        $('.sidebarmenu').animate({
-	            left: '0px'
-	        },500)
-	    } else {
-	        $('.sidebarmenu').animate({
-	            left: '-400px'
-	        },500)
-	    }
-	    $('.sidebarmenu,.image').data("hidden", !hidden);
-
-	    });
+		    $('#showmenu').click(function() {
+			    var hidden = $('.sidebarmenu').data('hidden');
+			    // $('#showmenu').text(hidden ? 'Hide Menu' : 'Show Menu');
+			    if(hidden){
+			        $('.sidebarmenu').animate({
+			            left: '0px'
+			        },500);
+			        $('#showmenu').animate({
+			        	left: '20%'
+			        },500)
+			    } else {
+			        $('.sidebarmenu').animate({
+			            left: '-400px'
+			        },500)
+			        $('#showmenu').animate({
+			            left: '0px'
+			        },500)
+			    }
+			    $('.sidebarmenu,.image').data("hidden", !hidden);
+		    });
 		}); 	
 	</script>
 </body>

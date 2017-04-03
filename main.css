@@ -132,6 +132,6 @@ h1{
 }
 
 #showmenu{
-    position: absolute;
-    left: 600px;
+    position: fixed;
+    left: 20%;
 }
