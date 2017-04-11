@@ -130,8 +130,42 @@ h1{
 .copyright{
     text-align: center;
 }
-
-#showmenu{
+/*--------------HAMBURGER BUTTON--------*/
+.burger-container{
     position: fixed;
     left: 20%;
+    display: block;
+    width: 50px;
+    height: 40px;  
+}
+
+.button{
+    background: none;
+    border: none;
+}
+
+.button span{
+    display: block;
+    width: 50px;
+    height: 10px;
+    margin-bottom: 5px;
+    background-color: red;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out 0.25s;
+}
+
+.burger-container.cross .second-line{
+    width: 0px;
+    opacity: 0;
+}
+
+.burger-container.cross .first-line{
+    transform: rotate(-45deg);
+    top: 15px;
+}
+
+.burger-container.cross .third-line{
+    transform: rotate(45deg);
+    top: -15px;
 }

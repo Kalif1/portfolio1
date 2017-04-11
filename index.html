@@ -53,17 +53,24 @@
 			<p class="copyright">@Copyright DP // 2017</p>
 			<img src="img/footer-border.png" alt="" class="logo-border-footer">
 		</footer>	
-		<button id="showmenu" type="button">damian</button>	
+		<!-- <button id="showmenu" class="hamburger-menu" type="button"></button> -->
+		<div class="burger-container" id="showmenu">
+			<button class="button" type="button">
+				<span class="first-line" id="fist-line"></span>
+				<span class="second-line"></span>
+				<span class="third-line"></span>
+			</button>
+		</div>
 	</section>
 	
 	<div class="cala-strona">
-		<h1>DAMIAN DAMIAN DAMIAN DMAIN ADMIASNDIASDNIF</h1>		
+		<!-- <h1>DAMIAN DAMIAN DAMIAN DMAIN ADMIASNDIASDNIF</h1>		 -->
 	</div>
 	<script>
 		$(document).ready(function() {
 		    $('#showmenu').click(function() {
 			    var hidden = $('.sidebarmenu').data('hidden');
-			    // $('#showmenu').text(hidden ? 'Hide Menu' : 'Show Menu');
+	// --------------------------POKAZYWANIE MENU------------
 			    if(hidden){
 			        $('.sidebarmenu').animate({
 			            left: '0px'
@@ -79,9 +86,17 @@
 			            left: '0px'
 			        },500)
 			    }
-			    $('.sidebarmenu,.image').data("hidden", !hidden);
+			    $('.sidebarmenu,.image').data("hidden", !hidden); 
 		    });
+		    $('#showmenu').click(function(){
+				$(this).toggleClass("cross");
+			});
 		}); 	
+		// $(document).ready(function(){
+		// 	$('#showmenu').click(function(){
+		// 		$(this).toggleClass("cross");
+		// 	});
+		// });
 	</script>
 </body>
 </html>
