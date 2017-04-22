@@ -1,11 +1,11 @@
-/*COLORS*/
-/*Grey menu and about us background: #2d2d2d;
-white font: #ffffff;
-blue font and hover: #00a9ff;
-light grey font: #747474;
-*/
+/*-------------Colors----------
+blue font: #0078ff;
+light blue contact: #469af9;
+black font: #2d2d2d;
+portfolio grey border: #f0eeee;*/
 
-/*------------STYLE RESET-----------*/
+
+/************************ STYLE RESET, GENERAL CLASSES ************************/
 *{
     margin: 0;
     padding: 0;
@@ -21,151 +21,52 @@ light grey font: #747474;
 
 body{
 	font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+	font-size: 15px;
 }
 
-
-/*--------------------------- MENU AND FOOTER --------------------------*/
-.menu-and-footer{
-	background-color: #2d2d2d;
-	float: left;
-    height: 100vh;
-    position: relative;
-    width: 20%;
-    z-index: 100000;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+.h1{
+	color: #0078ff;
 }
 
-.navigation{
-    height: 75%;
+/******************************** HEADER *******************************/
+.header{
+	margin: 0 auto;
+	height: 100vh;
 }
 
-h1{
-    text-align: center;
+.header-wrapper{
+	display: flex;
+	width: 90%;
+	height: 60%;
+	margin: 0 auto;
 }
 
-.cala-strona{
-    float: right;
-    z-index: 0;
-    position: absolute;
-    text-align: center;
-    width: 100vw;
-}
 .logo{
-    margin: 27px 0;
-    width: 30%;
+	height: 100%;
 }
 
-.logo-border{
-    width: 90%;
-    height: 1px;
-    display: block;
-    margin: 0 auto;
+.welcome-row{
+	width: 50%;
+	padding-top: 2em; 
 }
 
-.logo-border:first-of-type{
-    margin-top: 40px;
+.h1{
+	text-transform: capitalize;
+	font-size: 2em;
 }
 
-.menu-dots{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80%;
-    margin: 25px auto 25px auto;
-
+.h1-border{
+	width: 100%;
+	height: 1px;
+	background-color: #0078ff;
 }
 
-.menu-dot{
-    background-color: #ffffff;
-    width: 31px;
-    height: 31px;
-    border-radius: 50%;
+.read-more-bttn{
+	width: 15px;
+	height: 30px;
 }
 
-.main-menu a{
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.2em;
-}
-
-.main-menu{
-    text-align: left;
-    list-style-type: none;
-}
-
-.main-menu li{
-    padding: 10px 0;
-}
-
-.main-menu li:hover{
-    background-color: #00a9ff;
-    cursor: pointer;
-}
-
-.main-menu-wrapper{
-    width: 70%;
-    margin: 0 auto;
-}
-
-.footer{
-    color: #747474;
-    font-size: 0.7em;
-    height: 25%;
-    width: 80%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    line-height: 17px;
-}
-
-.logo-border-footer{
-    margin: 8% 0;
-}
-
-.copyright{
-    text-align: center;
-}
-/*--------------HAMBURGER BUTTON--------*/
-.burger-container{
-    position: fixed;
-    left: 20%;
-    display: block;
-    width: 50px;
-    height: 40px;  
-}
-
-.button{
-    background: none;
-    border: none;
-}
-
-.button span{
-    display: block;
-    width: 50px;
-    height: 10px;
-    margin-bottom: 5px;
-    background-color: red;
-    position: relative;
-    top: 0;
-    transition: all ease-in-out 0.25s;
-}
-
-.burger-container.cross .second-line{
-    width: 0px;
-    opacity: 0;
-}
-
-.burger-container.cross .first-line{
-    transform: rotate(-45deg);
-    top: 15px;
-}
-
-.burger-container.cross .third-line{
-    transform: rotate(45deg);
-    top: -15px;
+.specialization{
+	height: 40%;
+	background-color: red;
 }
